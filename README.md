@@ -1,6 +1,6 @@
 # bettingsite1
 
-![Hello World Screenshot](./screenshot.png "Hello World Screenshot")
+![Hello World Screenshot](./Screenshot.png "Hello World Screenshot")
 
 ## What It Is
 
