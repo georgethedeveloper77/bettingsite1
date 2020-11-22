@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>SISI SPORT</title>
+
+	<link rel="shortcut icon" href="./images/favicon_io/apple-touch-icon.png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker3.min.css">
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<a href="logined.html">
+					<div class="logo"></div>
+				</a>
+				<form class="navbar-form navbar-right">
+					<p class="acc-info"><span>George</span><br>balance: Kes <span>4000.00</span></p>
+					<ul class="login">
+						<li><a style="color: rgb(255, 234, 168);" href="personal-details.html">Account</a></li>
+						<li><a style="color: rgb(175, 255, 168);" href="deposit.html">Deposit</a></li>
+						<li><a style="color: rgb(255, 174, 168);" href="index.html">Log out</a></li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</header>
+	<div class="header-line">
+		<div class="circle"></div>
+		<div class="line"></div>
+		<div class="circle"></div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="vside-adline col-lg-6 col-md-7 col-sm-8">
+				<div class="v-lines"></div>
+			</div>
+			<div class="vtcenter-line col-lg-18 col-md-17 col-sm-16">
+				<div class="v-lines"></div>
+			</div>
+		</div>
+	</div>
+	<section class="main-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-7 col-sm-8">
+					<div class="side-menu">
+						<ul>
+							<li><a href="personal-details.html">Personal details</a></li>
+							<li><a href="payment-source.html">Deposit</a></li>
+							<li><a href="bet-history.html">Bet history</a></li>
+							<li><a href="account-history.html">Account history</a></li>
+							<li><a href="login-history.html">Login history</a></li>
+							<li><a href="change-password.html">Change password</a></li>
+							<li><a href="other-settings.html">Other settings</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-18 col-md-17 col-sm-16">
+					<div class="center-content col-lg-24 col-md-24 col-sm-24">
+						<h2>My Account</h2>
+						<p>Account number: <span>+254 00606199</span></p>
+						<table class="info-balance">
+							<tbody>
+								<tr>
+									<td>Available balance:</td>
+									<td>Kes 4000.00</td>
+								</tr>
+								<tr>
+									<td>Unsettled bets:</td>
+									<td>Kes 10.00</td>
+								</tr>
+								<tr>
+									<td>Pending withdrowals:</td>
+									<td>Kes 00.00</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="v-space"></div>
+						<h2>Other settings</h2>
+						<div class="deposit-info">
+							<form class="form-inline">
+								<label>Inactivity timeout:</label>
+								<select class="form-control">
+									<option disabled selected hidden>--</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+								<span>minutes</span>
+							</form>
+							<form class="form-inline">
+								<label>Time zone:</label>
+								<select class="form-control">
+									<option disabled selected hidden>--</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</form>
+							<form class="form-inline">
+								<label>Odds type:</label>
+								<select class="form-control">
+									<option disabled selected hidden>--</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</form>
+							<form class="form-inline">
+								<label>Automatical confirmation<br>of the change of odds:</label>
+								<select class="form-control">
+									<option disabled selected hidden>--</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</form>
+							<form class="form-inline">
+								<label>Show current balance:</label>
+								<div class="check-pos">
+									<div class="form-check">
+										<label class="form-check-label">
+											<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+												value="option1" checked>
+											Yes
+										</label>
+									</div>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+												value="option2">
+											No
+										</label>
+									</div>
+								</div>
+							</form>
+							<button class="btn-primary btn">Save</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+		/*Line width*/
+		$(window).resize(function () {
+			$w = $(window).outerWidth()
+			$('.header-line').css({
+				width: $w - 60,
+				marginLeft: -($w - 60) / 2,
+				left: $w / 2
+			});
+			$('.line').css({
+				width: $w - 92
+			});
+			$('.main-content').css({
+				minHeight: $(window).outerHeight() - $('header').outerHeight()
+			});
+		});
+		$(window).resize();
+	</script>
+</body>
+
+</html>
