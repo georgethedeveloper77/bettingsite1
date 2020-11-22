@@ -515,4 +515,77 @@
 			</div>
 		</div>
 	</div>
-	<!--Login Modal-->
+  <!--Login Modal-->
+  
+	<!--Start Of Scripts-->
+	<!-- Tabs -->
+	<script>
+		$(document).ready(function () {
+			$(".nav-tabs a").click(function () {
+				$(this).tab('show');
+			});
+		});
+	</script>
+
+	<!-- Searching-->
+	<script>
+		document.querySelector(".search-icon").addEventListener('click', function () {
+			document.querySelector(".search-screen").classList.add("active");
+		});
+
+		document.querySelector(".close-icon").addEventListener('click', function () {
+			document.querySelector(".search-screen").classList.remove("active");
+		});
+	</script>
+	<!-- Searching-->
+
+
+	<!-- Side-info toggle icon -->
+	<script>
+		$(document).ready(function () {
+			$("#playing-now").on("hide.bs.collapse", function () {
+				$(".playing-collapse").html('<i class="fa fa-sort-down fa-lg fa-inverse"></i>');
+			});
+			$("#playing-now").on("show.bs.collapse", function () {
+				$(".playing-collapse").html('<i class="fa fa-sort-asc fa-lg fa-inverse"></i>');
+			});
+		});
+		$(document).ready(function () {
+			$("#tournaments").on("hide.bs.collapse", function () {
+				$(".tournaments-collapse").html('<i class="fa fa-sort-down fa-lg fa-inverse"></i>');
+			});
+			$("#tournaments").on("show.bs.collapse", function () {
+				$(".tournaments-collapse").html('<i class="fa fa-sort-asc fa-lg fa-inverse"></i>');
+			});
+		});
+		$(document).ready(function () {
+			$("#teams").on("hide.bs.collapse", function () {
+				$(".teams-collapse").html('<i class="fa fa-sort-down fa-lg fa-inverse"></i>');
+			});
+			$("#teams").on("show.bs.collapse", function () {
+				$(".teams-collapse").html('<i class="fa fa-sort-asc fa-lg fa-inverse"></i>');
+			});
+		});
+
+		/*Line width*/
+		$(window).resize(function () {
+			$w = $(window).outerWidth()
+			$('.header-line').css({
+				width: $w - 60,
+				marginLeft: -($w - 60) / 2,
+				left: $w / 2
+			});
+			$('.line').css({
+				width: $w - 92
+			});
+			$('.main-content').css({
+				minHeight: $(window).outerHeight() - $('header').outerHeight()
+			});
+		});
+		$(window).resize();
+	</script>
+
+
+</body>
+
+</html>
