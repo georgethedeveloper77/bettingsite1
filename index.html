@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
   <header>
     <div class="container">
 
@@ -45,6 +46,7 @@
 
     </div>
   </header>
+
   <div class="header-line">
     <div class="circle"></div>
     <div class="line"></div>
@@ -425,6 +427,7 @@
           </div>
         </div>
         <!--End of Center-->
+
         <!--Start of BetSlip-->
         <div class=" col-lg-6 col-md-24 col-sm-24">
           <div class="calculating">
@@ -478,112 +481,114 @@
     </div>
   </section>
 
-	<section class="social-icons">
-		<br>
-		<footer>
-			<div class="sm">
-				<a href="#"><em class="fab fa-facebook-f"></em></a>
-				<a href="#"><em class="fab fa-twitter"></em></a>
-				<a href="#"><em class="fab fa-instagram"></em></a>
-				<a href="#"><em class="fab fa-youtube"></em></a>
-				<a href="#"><em class="fab fa-linkedin-in"></em></a>
-				<a href="#"><em class="fab fa-behance"></em></a>
-			</div>
-		</footer>
+  <section class="social-icons">
+    <br>
+    <footer>
+      <div class="sm">
+        <a href="#"><em class="fab fa-facebook-f"></em></a>
+        <a href="#"><em class="fab fa-twitter"></em></a>
+        <a href="#"><em class="fab fa-instagram"></em></a>
+        <a href="#"><em class="fab fa-youtube"></em></a>
+        <a href="#"><em class="fab fa-linkedin-in"></em></a>
+        <a href="#"><em class="fab fa-behance"></em></a>
+      </div>
+    </footer>
 
-	</section>
+  </section>
 
-	<!--Login Modal-->
-	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-		style="display: none;">
-		<div class="modal-dialog">
-			<!-- 		<i class="fa fa-times fa-2x close-modal" data-dismiss="modal" aria-hidden="true" style="cursor: pointer;"></i> -->
-			<div class="loginmodal-container">
-				<h3>You not logged in. Please, enter your account details or Sign up</h3><br>
-				<form>
-					<input type="text" name="user" placeholder="Username">
-					<input type="password" name="pass" placeholder="Password">
-
-					<div class="btn-group" style="width: 100%;">
-						<button class="modal-button btn-success" style="float: left;">Sign up</button>
-						<button class="modal-button btn-primary" style="float: right;">Sign in</button>
-					</div>
-				</form>
-				<div class="login-help">
-					<a href="#">Forgot Password</a>
-				</div>
-			</div>
-		</div>
-	</div>
   <!--Login Modal-->
-  
-	<!--Start Of Scripts-->
-	<!-- Tabs -->
-	<script>
-		$(document).ready(function () {
-			$(".nav-tabs a").click(function () {
-				$(this).tab('show');
-			});
-		});
-	</script>
+  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+    style="display: none;">
+    <div class="modal-dialog">
+      <!-- 		<i class="fa fa-times fa-2x close-modal" data-dismiss="modal" aria-hidden="true" style="cursor: pointer;"></i> -->
+      <div class="loginmodal-container">
+        <h3>You not logged in. Please, enter your account details or Sign up</h3><br>
+        <form>
+          <input type="text" name="user" placeholder="Username">
+          <input type="password" name="pass" placeholder="Password">
 
-	<!-- Searching-->
-	<script>
-		document.querySelector(".search-icon").addEventListener('click', function () {
-			document.querySelector(".search-screen").classList.add("active");
-		});
+          <div class="btn-group" style="width: 100%;">
+            <button class="modal-button btn-success" style="float: left;">Sign up</button>
+            <button class="modal-button btn-primary" style="float: right;">Sign in</button>
+          </div>
+        </form>
+        <div class="login-help">
+          <a href="#">Forgot Password</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Login Modal-->
 
-		document.querySelector(".close-icon").addEventListener('click', function () {
-			document.querySelector(".search-screen").classList.remove("active");
-		});
-	</script>
-	<!-- Searching-->
 
 
-	<!-- Side-info toggle icon -->
-	<script>
-		$(document).ready(function () {
-			$("#playing-now").on("hide.bs.collapse", function () {
-				$(".playing-collapse").html('<i class="fa fa-sort-down fa-lg fa-inverse"></i>');
-			});
-			$("#playing-now").on("show.bs.collapse", function () {
-				$(".playing-collapse").html('<i class="fa fa-sort-asc fa-lg fa-inverse"></i>');
-			});
-		});
-		$(document).ready(function () {
-			$("#tournaments").on("hide.bs.collapse", function () {
-				$(".tournaments-collapse").html('<i class="fa fa-sort-down fa-lg fa-inverse"></i>');
-			});
-			$("#tournaments").on("show.bs.collapse", function () {
-				$(".tournaments-collapse").html('<i class="fa fa-sort-asc fa-lg fa-inverse"></i>');
-			});
-		});
-		$(document).ready(function () {
-			$("#teams").on("hide.bs.collapse", function () {
-				$(".teams-collapse").html('<i class="fa fa-sort-down fa-lg fa-inverse"></i>');
-			});
-			$("#teams").on("show.bs.collapse", function () {
-				$(".teams-collapse").html('<i class="fa fa-sort-asc fa-lg fa-inverse"></i>');
-			});
-		});
+  <!--Start Of Scripts-->
+  <!-- Tabs -->
+  <script>
+    $(document).ready(function () {
+      $(".nav-tabs a").click(function () {
+        $(this).tab('show');
+      });
+    });
+  </script>
 
-		/*Line width*/
-		$(window).resize(function () {
-			$w = $(window).outerWidth()
-			$('.header-line').css({
-				width: $w - 60,
-				marginLeft: -($w - 60) / 2,
-				left: $w / 2
-			});
-			$('.line').css({
-				width: $w - 92
-			});
-			$('.main-content').css({
-				minHeight: $(window).outerHeight() - $('header').outerHeight()
-			});
-		});
-		$(window).resize();
-	</script>
+  <!-- Searching-->
+  <script>
+    document.querySelector(".search-icon").addEventListener('click', function () {
+      document.querySelector(".search-screen").classList.add("active");
+    });
+
+    document.querySelector(".close-icon").addEventListener('click', function () {
+      document.querySelector(".search-screen").classList.remove("active");
+    });
+  </script>
+  <!-- Searching-->
+
+
+  <!-- Side-info toggle icon -->
+  <script>
+    $(document).ready(function () {
+      $("#playing-now").on("hide.bs.collapse", function () {
+        $(".playing-collapse").html('<i class="fa fa-sort-down fa-lg fa-inverse"></i>');
+      });
+      $("#playing-now").on("show.bs.collapse", function () {
+        $(".playing-collapse").html('<i class="fa fa-sort-asc fa-lg fa-inverse"></i>');
+      });
+    });
+    $(document).ready(function () {
+      $("#tournaments").on("hide.bs.collapse", function () {
+        $(".tournaments-collapse").html('<i class="fa fa-sort-down fa-lg fa-inverse"></i>');
+      });
+      $("#tournaments").on("show.bs.collapse", function () {
+        $(".tournaments-collapse").html('<i class="fa fa-sort-asc fa-lg fa-inverse"></i>');
+      });
+    });
+    $(document).ready(function () {
+      $("#teams").on("hide.bs.collapse", function () {
+        $(".teams-collapse").html('<i class="fa fa-sort-down fa-lg fa-inverse"></i>');
+      });
+      $("#teams").on("show.bs.collapse", function () {
+        $(".teams-collapse").html('<i class="fa fa-sort-asc fa-lg fa-inverse"></i>');
+      });
+    });
+
+    /*Line width*/
+    $(window).resize(function () {
+      $w = $(window).outerWidth()
+      $('.header-line').css({
+        width: $w - 60,
+        marginLeft: -($w - 60) / 2,
+        left: $w / 2
+      });
+      $('.line').css({
+        width: $w - 92
+      });
+      $('.main-content').css({
+        minHeight: $(window).outerHeight() - $('header').outerHeight()
+      });
+    });
+    $(window).resize();
+  </script>
 
 
 </body>
